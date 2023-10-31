@@ -92,11 +92,12 @@ strong {
 
 .header--img {
   width: 100%;
-  height: 1024px;
+  height: 640px;
   background: url(./header--bg--mobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 4.8rem;
 }
 
 
@@ -321,7 +322,7 @@ main{
   width: 100%;
   height: auto;
   border-radius: .8rem;
-  padding: .8rem;
+  padding: .48rem;
 }
 
 .carta-digital button a {
@@ -329,7 +330,7 @@ main{
   color: var(--primary-950);
   font-weight: 700;
   font-size: 1.6rem;
-  padding: .8rem;
+  padding: .48rem;
 }
 
 /* encontranos */
@@ -359,7 +360,7 @@ main{
 
 .encontranos p {
   color: var(--primary-950);
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
   padding-top: .8rem;
 }
