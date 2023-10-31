@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lo de María, es una cafetería especializada en 
+  bakery, ubicada en El Bolsón, Río Negro. Usamos productos orgánicos de la zona.">
+  <meta name="author" content="Ariel Contini / aique 2023">
+  <meta name="generator" content="*">
+
+  <title>lo de maría / 2023 </title>
+  <!-- estilos responsive BEM -->
+  <link rel="stylesheet" href=".//mobile.css">
+  <link rel="stylesheet" href="./desktop.css">
+  <!-- THE END -->
+
+  <!-- bootstrap start -->
+  <link rel="stylesheet" href="./bootstrap.css">
+  <!-- THE END -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">lo de maría</a>
+      <button class="navbar-toggler" 
+        id="toggleButton" 
+        type="button" 
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample01" 
+        aria-controls="navbarsExample01" 
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+
+        <ul class="navbar-nav me-auto mb-2">
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#catering" class="nav-link" href="#">catering</a>
+          </li>
+          <li class="nav-item">
+            <a href="#take-away" class="nav-link">take away</a>
+          </li>
+          <li class="nav-item">
+            <a href="#carta-digital" class="nav-link">carta digital</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link">encontranos</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+<!-- ENCABEZADO -->
+<header id="inicio">
+  <div class="header--img"></div>
+</header>
+
+<!-- Contenido -->
+<main>
+<section class="welcome--message">
+    <article>
+      <h1>...vení a descubrir nuestra pastelería de autor...</h1>
+    </article>
+</section>
+<section class="content--grid">
+<!-- Sección catering -->
+<article class="catering" id="catering">
+      <img src="./eventos.jpg" alt="Imagen de un pedido">
+          <h2>eventos</h2>
+          <p>¡servicio de catering para eventos! contactanos</p>
+          <a href="https://www.instagram.com/cafelodemaria/"><img src="../svg/ig-icono.svg" alt=""></a>
+  </article>
+ 
+<!-- Sección take away -->
+<article class="take-away" id="take-away">
+    <img src="./take-away.jpg" alt="Imagen de un pedido">
+    <h2>take away</h2>
+    <p>¡hace tu pedido por instagram!</p>
+    <a href="https://www.instagram.com/cafelodemaria/"><img src="../svg/ig-icono.svg" alt=""></a> 
+  </article>
+
+<!-- Sección carta digital -->
+<article class="carta-digital" id="carta-digital">
+   <img src="./combo-6.jpg" alt="Imagen de un pedido">
+      <h2>carta digital</h2>
+      <p>¡checkeá nuestra carta digital!</p>
+      <button><a href="./carta.html">ver</a></button>
+  </article>
+
+</section>
+<!-- Sección encontranos -->
+<section class="encontranos" id="find-us">
+      <img src="./encontranos.jpg" alt="lo de maría en google maps">
+      <article>
+        <h2>encontranos</h2>
+        <p>veí a compartir un gran momento con tu familia y amigos <br>¡buscanos en google maps!</p>
+        <button><a target="_blank" href="https://maps.app.goo.gl/Rbj565D84874HDvK7">ir</a></button>
+      </article>
+</section>
+
+<button class="scroll-to-top" aria-label="scroll to top">
+      <span class="scroll-to-top__arrow"></span>
+</button>
+</main>
+
+
+
+  <!--  FOOTER  -->
+<footer id="contacto" class="footer d-flex py-4 px-4">
+
+    <ul class="col-md-3 justify-content-center list-unstyled d-flex">
+
+      <li class="mb-4">
+        <a href="https://www.instagram.com/cafelodemaria/" target="_blank">
+          <img src="./ig-icono.svg" class="social--icon" alt="Instagram">
+        </a>
+      </li>
+
+      <li class="mb-4">
+        <p>¡seguínos en instagram!</p>
+      </li>
+    </ul>
+</footer>
+
+
+<!-- Esto hace que el boton haga scroll para arriba -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 500) {
+          scrollToTopButton.style.display = 'block';
+        } else {
+          scrollToTopButton.style.display = 'none';
+        }
+      });
+      scrollToTopButton.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          opacity:0,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+</script>
+
+<!-- Esto hace que el navbar se cierra cuando vos apretas -->
+<script>
+  // Cerrar el navbar cuando se hace clic en un enlace del menú
+  document.querySelectorAll('.nav-link').forEach(function(navLink) {
+    navLink.addEventListener('click', function() {
+      // Cierra el menú al hacer clic en un enlace
+      var navbar = new bootstrap.Collapse(document.getElementById('navbarsExample01'));
+      navbar.hide();
+    });
+  });
+</script>
+
+  <script src="./bootstrap.bundle.min.js"></script>
+
+  <!--Este codigo fue escrito en 2023 por Ariel Hernán Contini para: Lo de María, una cafetería & bakeshop de El Bolsón. -->
+  
+  
+  
+  <!-- THE END HAS NO END -->
+</body>
+
+</html>
